@@ -127,7 +127,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                 icon: const Icon(Icons.save),
                 label: const Text('Save Record'),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(255, 89, 203, 93),
+                  backgroundColor: Colors.red,
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(vertical: 14),
                   textStyle: const TextStyle(fontSize: 16),

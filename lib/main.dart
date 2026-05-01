@@ -14,10 +14,10 @@ class StudentRecordApp extends StatelessWidget {
       title: 'MIS424 Student Records',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
         useMaterial3: true,
         appBarTheme: const AppBarTheme(
-          backgroundColor: Color.fromARGB(255, 104, 228, 108),
+          backgroundColor: Colors.red,
           foregroundColor: Colors.white,
           elevation: 2,
         ),

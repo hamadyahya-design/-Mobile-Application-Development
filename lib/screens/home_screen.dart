@@ -130,7 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
         },
         icon: const Icon(Icons.person_add),
         label: const Text('Add Student'),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.red,
         foregroundColor: Colors.white,
       ),
     );
@@ -172,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen> {
             label: Text(level == 'All' ? 'All Levels' : 'Level $level'),
             selected: selected,
             onSelected: (_) => _onLevelChanged(level),
-            selectedColor: Colors.green,
+            selectedColor: Colors.red,
             labelStyle: TextStyle(
               color: selected ? Colors.white : Colors.black87,
               fontWeight: selected ? FontWeight.bold : FontWeight.normal,

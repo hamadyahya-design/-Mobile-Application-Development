@@ -8,7 +8,7 @@ class StudentCard extends StatelessWidget {
   const StudentCard({super.key, required this.student, required this.onTap});
 
   Color _gpaColor(double gpa) {
-    if (gpa >= 4.5) return Colors.green;
+    if (gpa >= 4.5) return Colors.red;
     if (gpa >= 3.5) return Colors.blue;
     if (gpa >= 2.5) return Colors.orange;
     return Colors.red;
@@ -21,7 +21,7 @@ class StudentCard extends StatelessWidget {
       child: ListTile(
         onTap: onTap,
         leading: CircleAvatar(
-          backgroundColor: const Color.fromARGB(255, 97, 213, 101),
+          backgroundColor: Colors.red,
           child: Text(
             student.name.isNotEmpty ? student.name[0].toUpperCase() : '?',
             style: const TextStyle(
