@@ -55,7 +55,7 @@ class StudentDetailScreen extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 48,
-              backgroundColor: const Color.fromARGB(255, 96, 216, 100),
+              backgroundColor: Colors.red,
               child: Text(
                 student.name.isNotEmpty ? student.name[0].toUpperCase() : '?',
                 style: const TextStyle(fontSize: 40, color: Colors.white),
@@ -110,7 +110,7 @@ class StudentDetailScreen extends StatelessWidget {
 
   Widget _contributionCard(BuildContext context) {
     return Card(
-      color: Colors.green.shade50,
+      color: Colors.red.shade50,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -135,7 +135,7 @@ class StudentDetailScreen extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 6),
       child: Row(
         children: [
-          Icon(icon, size: 18, color: const Color.fromARGB(255, 93, 206, 97)),
+          Icon(icon, size: 18, color: Colors.red),
           const SizedBox(width: 10),
           Text('$label: ', style: const TextStyle(fontWeight: FontWeight.w600)),
           Expanded(child: Text(value, overflow: TextOverflow.ellipsis)),
